@@ -1,101 +1,63 @@
-:root {
-    --main--color: #096d75; /* Cor principal*/
-    --text-color: #ffffff; /* Cor do texto*/
-    --bg-color-01: #1f242d; /* Cor de fundo 1*/
-    --bg-color-02: #323946; /* Cor de fundo 2*/
-    --color-00: #000000; 
-}
-
-/* Reset básico */
-* {
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202533;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Faz o padding e borda serem incluídos no tamanho do elemento */
-    text-decoration: none; /* Remove sublinhado de links */
-    border: none; /* Remove bordas padrão */
-    outline: none; /* Remove contorno de foco */
-    scroll-behavior: smooth; /* Rolagem suave */
+    text-align: center;
 }
 
-html {
-    font-size: 16px; /* Tamanho base da fonte */
-}
-
-body {
-    background-color: var(--bg-color-01); /* Cor de fundo do corpo */
-    color: var(--text-color); /* Cor do texto */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-}
-
-/* Cabeçalho */
+/* Estilo do cabeçalho */
 header {
-    position: fixed; /* Fixa o cabeçalho no topo */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ocupa toda a largura */
-    background-color: var(--bg-color-01); /* Cor de fundo */
-    padding: 1.1rem 10%; /* Espaçamento interno (1.1rem topo/baixo, 10% laterais) */
+    background-color: #2C3E50;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
-    align-items: center; /* Centraliza verticalmente */
-    z-index: 100; /* Garante que o cabeçalho fique acima de outros elementos */
-    border-bottom: solid 1px var(--bg-color-02); /* Borda inferior */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Logo */
-.logo {
-    font-size: 1.7rem; /* Tamanho da fonte */
-    font-weight: 600; /* Peso da fonte */
-    color: var(--text-color); /* Cor do texto */
-    cursor: default; /* Remove o cursor de link */
+header .logo {
+    color: #ECF0F1;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Menu de navegação */
-.nav {
-    display: flex; /* Layout flexível para os links */
-    gap: 1rem; /* Espaço entre os links */
-}
-
-.nav a {
-    font-size: 1.2rem; /* Tamanho da fonte */
-    color: var(--text-color); /* Cor do texto */
-    padding: 0.5rem 1rem; /* Espaçamento interno */
-    transition: 0.4s; /* Transição suave para hover */
-    border: solid 1px transparent; /* Borda transparente */
-    border-radius: 0.5rem; /* Bordas arredondadas */
-}
-
-
-/* Seção Início */
-.inicio {
-    min-height: 100vh; /* Altura mínima da seção (toda a altura da tela) */
-    padding: 6rem 10% 2rem; /* Espaçamento interno (topo, laterais, inferior) */
-    background-color: var(--bg-color-02); /* Cor de fundo da seção */
+header .nav {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: space-between; /* Espaço entre conteúdo e imagem */
+    gap: 20px;
+}
+
+header .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+header .nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .nav a {
+        padding: 5px;
+    }
 }
 
 .inicio-content {
-    max-width: 600px; /* Largura máxima do conteúdo */
-}
-
-.inicio-content h1 {
-    font-size: 3rem; /* Tamanho do título principal */
-    margin-bottom: 0.5rem; /* Espaço abaixo do título */
-}
-
-.midia-social a {
-    color: var(--text-color); /* Cor dos ícones */
-    font-size: 1.5rem; /* Tamanho dos ícones */
-    transition: 0.4s; /* Transição suave para hover */
-}
-
-.midia-social a:hover {
-    color: var(--main--color); /* Cor dos ícones ao passar o mouse */
-}
-
-
-.botao:hover {
-    background-color: #07555c; /* Cor de fundo ao passar o mouse */
+    text-align: left;
+    margin-left: 20px; 
 }

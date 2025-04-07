@@ -90,6 +90,7 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 .inicio {
     display: flex;
     flex-direction: row;
@@ -98,6 +99,8 @@ footer {
     flex-wrap: wrap;
     
 }
+
+/*foto do portfolio*/
 
 .foto-inicio {
     width: 35%;
@@ -185,7 +188,7 @@ footer {
     transition: 0.4s;
     border-radius: 2px;
 }
-/* Resposividade do site, celular e tablet*/
+/* Resposividade do site celular e tablet*/
 @media (max-width: 1024px) {
     .inicio {
         flex-direction: column; 
@@ -293,7 +296,7 @@ footer {
     margin: 0.5rem;
     letter-spacing: 0.1;
 }
-
+/* Botão*/
 .btn {
     display: inline-block;
     padding: 0.7rem 1.8rem;
@@ -336,10 +339,45 @@ footer {
     display: block;
 }
 
-.portfolio-box:hover .portfolio-overlay {
+.portfolio-box:hover 
+.portfolio-overlay {
     opacity: 1; 
 }
 
 .portfolio-box:hover img {
     transform: scale(1.05); 
+}
+
+/*Contato*/
+.contato {
+    padding: 4rem 2rem;
+    background-color: #202533;
+    color: #ECF0F1;
+}
+
+.input-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-box input,
+.contato textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #2C3E50;
+    border: 1px solid #34495E;
+    color: #ECF0F1;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contato .btn {
+    display: flex;
+    justify-content: center;
+    
 }

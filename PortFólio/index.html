@@ -11,14 +11,14 @@
 <body>
     <header>
         <a href="#" class="logo">Portfólio</a>
-        <div class="nav">
+        <div class="nav" id="nav">
             <a href="#inicio">Inicio</a>
             <a href="#projetos">Projetos</a>
             <a href="#portfolio">Portfólio</a>
             <a href="#contato">Contato</a>
         </div>
 
-        <div class="menu">
+        <div class="menu" id="menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -26,6 +26,7 @@
     </header>
      <!--Inicio-->
     <section class="inicio" id="inicio">
+         <div class="container"></div>
         <div class="inicio-content">
             <h3>Olá eu sou</h3>
             <h1>Marcos</h1>
@@ -66,37 +67,78 @@
                 <h3>Desenvolvedor Web</h3>
 
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, veritatis corrupti? Ea minus sunt nam accusantium commodi iure. Necessitatibus odio exercitationem aliquam, soluta ullam reprehenderit earum? Distinctio ratione consequuntur soluta!
+                    Criação de interfaces modernas, responsivas e otimizadas para SEO. Especialista em HTML, CSS, JavaScript e frameworks como React, com foco na experiência do usuário e performance de carregamento.
                 </p>
 
                 <a href="#" class="btn">Mostrar Mais</a>
             </div>
+
+            
+        <div class="Projetos-box">
+            <i class='bx bx-server'></i>
+            <h3>Desenvolvedor Backend</h3>
+            <p>
+                Experiência sólida com servidores, APIs RESTful, banco de dados e lógica de negócio. Projetos com Node.js, Express, PostgreSQL e segurança de aplicações.
+            </p>
+            <a href="#" class="btn">Mostrar Mais</a>
+        </div>
+
+        <div class="Projetos-box">
+            <i class='bx bx-laptop'></i>
+            <h3>Desenvolvedor Fullstack</h3>
+            <p>
+                Capacidade de entregar projetos completos, frontend + backend. Utilização de tecnologias como React, Node.js, MongoDB, além de versionamento com Git.
+            </p>
+            <a href="#" class="btn">Mostrar Mais</a>
+        </div>
+
         </div>
     </section>
     <!--Serviços-->
 
     <!--PortFólio-->
     <section class="Portfolio" id="Portfolio">
-        <h2>Ultimos <span>Projetos</span></h2>
+    <h2>Últimos <span>Projetos</span></h2>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="Assets/Projeto1.jpg" alt="portfolio1">
+    <div class="portfolio-container">
 
-                <div class="portfolio-animacao">
-                    <h4>Desenvolvedor Web</h4>
-                </div>
-
+        <!-- Projeto 1: Frontend -->
+        <div class="portfolio-box">
+            <img src="Assets/Projeto1.jpg" alt="Projeto Frontend">
+            <div>
+                <h4>Landing Page Responsiva</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deleniti ipsa maiores saepe, 
-                    eligendi voluptas omnis. Earum aut assumenda voluptatibus quisquam. Dolor vel corporis enim quo in neque et suscipit adipisci, 
-                    itaque ad ratione aspernatur molestiae vero magnam maiores praesentium consequuntur sapiente, eveniet maxime consequatur pariatur.
-                    Consectetur error cupiditate asperiores.
+                    Criação de uma landing page institucional responsiva com foco em performance e SEO. Utilização de HTML5, CSS3 e JavaScript puro, garantindo compatibilidade com todos os dispositivos.
                 </p>
-
-                <a href="#" class="btn">Ver Projeto</a>
             </div>
+            <a href="#" class="btn">Ver Projeto</a>
         </div>
+
+        <!-- Projeto 2: Backend -->
+        <div class="portfolio-box">
+            <img src="Assets/projeto2.png" alt="Projeto Backend">
+            <div>
+                <h4>API RESTful para Sistema de Tarefas</h4>
+                <p>
+                    Desenvolvimento de uma API em Node.js com Express, MongoDB e autenticação JWT. Documentada com Swagger, ideal para integração com aplicações web e mobile.
+                </p>
+            </div>
+            <a href="#" class="btn">Ver Projeto</a>
+        </div>
+
+        <!-- Projeto 3: Fullstack -->
+        <div class="portfolio-box">
+            <img src="Assets/Projeto3.jpg" alt="Projeto Fullstack">
+            <div>
+                <h4>Plataforma de Cursos Online</h4>
+                <p>
+                    Projeto fullstack com React no frontend e Node.js no backend. Sistema de login, upload de vídeos, controle de progresso do aluno e painel administrativo completo.
+                </p>
+            </div>
+            <a href="#" class="btn">Ver Projeto</a>
+        </div>
+
+    </div>
     </section>
     <!--PortFólio-->
 
@@ -119,10 +161,9 @@
         <a href="#" class="btn">Enviar Mensagem</a>
     </section>
     <!--Contato-->
-
     <footer>
         <p>Copyright &copy; 2025 por Marcos, todos direitos reservados</p>
     </footer>
 </body>
-<script src="JS/script.js"></script>
+<script src="Code.js"></script>
 </html>

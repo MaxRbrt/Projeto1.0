@@ -260,6 +260,7 @@ footer {
     }
 }
 
+/*animação Menu */
 .bar1-animate { transform: rotate(-45deg) translate(-5px, 6px); }
 .bar2-animate { opacity: 0; }
 .bar3-animate { transform: rotate(45deg) translate(-5px, -6px); }

@@ -177,27 +177,31 @@
     <!--PortFólio-->
 
     <!--Contato-->
-    <section class="contato" id="contato">
-        <h2>Entre em <span>Contato</span></h2>
+<section class="contato" id="contato">
+  <h2>Entre em <span>Contato</span></h2>
 
-        <div class="input-box">
-            <input type="text" placeholder="Digite Seu Nome">
-            <input type="email" placeholder="Digite Seu Email">
-        </div>
+  <form id="form-contato">
+    <div class="input-box">
+      <input type="text" id="nomeContato" placeholder="Digite Seu Nome" required>
+      <input type="email" id="emailContato" placeholder="Digite Seu Email" required>
+      <span id="erroEmail" style="color: red; font-size: 0.9rem;"></span>
+    </div>
 
-        <div class="input-box">
-            <input type="number" placeholder="Digite Seu Telefone">
-            <input type="text" placeholder="Digite Seu Assunto">
-        </div>
+    <div class="input-box">
+      <input type="number" id="telefoneContato" placeholder="Digite Seu Telefone">
+      <input type="text" id="assuntoContato" placeholder="Digite Seu Assunto">
+    </div>
 
-        <textarea cols="30" rows="8" placeholder="Mensagem"></textarea>
-
-        <a href="#" class="btn">Enviar Mensagem</a>
-    </section>
-    <!--Contato-->
+    
+    <div class="mensagem-box">
+      <textarea id="mensagemContato" cols="30" rows="8" placeholder="Mensagem"></textarea>
+      <button type="submit" class="btn2">Enviar Mensagem</button>
+    </div>
+  </form>
+</section>
     <footer>
         <p>Copyright &copy; 2025 por Marcos, todos direitos reservados</p>
-    </footer>
+    </footer>   
 </body>
 <script src="PortFólio/Code.js"></script>
 </html>

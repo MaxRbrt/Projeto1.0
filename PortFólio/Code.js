@@ -18,9 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         bar1.classList.toggle('bar1-animate');
         bar2.classList.toggle('bar2-animate');
         bar3.classList.toggle('bar3-animate');
-    });
+      });
 });
-
 
 //FUNCIONALIDADE DO HEADER
   let lastScrollTop = 0;
@@ -35,6 +34,19 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       
       header.classList.remove('hide');
+    }
+
+    if (nav.classList.contains('active')) {
+        nav.classList.remove('active');
+        menu.classList.remove('open');
+
+        const bar1 = menu.querySelector('.bar1');
+        const bar2 = menu.querySelector('.bar2');
+        const bar3 = menu.querySelector('.bar3');
+
+        bar1.classList.remove('bar1-animate');
+        bar2.classList.remove('bar2-animate');
+        bar3.classList.remove('bar3-animate');
     }
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
